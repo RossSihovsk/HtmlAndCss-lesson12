@@ -1,0 +1,259 @@
+@media screen and (max-width: 970px) {
+    .item {
+        left: calc(50% - 768px/2);
+    }
+    .header-logoName {
+        @include position (46px, 0, 0, 48px);
+    }
+    .header-logIn {
+        @include position (50px, 0, 0, 565px);
+    }
+    .header-SignUp {
+        @include position (40px, 0, 0, 628px);
+    }
+    .header-maintext {
+        @include position (223.5px, 0, 0, 149px);
+    }
+    .header-text {
+        @include position (378px, 0, 0, 186px);
+    }
+    .header-btn {
+        @include position (436px, 0, 0, 272px);
+    }
+    .container {
+        width: 748px;
+    }
+    .dreamshare-wrap {
+        width: 748px;
+    }
+    .dreamshare__title {
+        width: 289px;
+        height: 27px;
+        @include styleText(Montserrat f, 22px, 27px);
+    }
+    .dreamshare-step__box {
+        width: 236px;
+    }
+    .dreamshere-step_step {
+        @include position (205px, 0, 0, 20px);
+    }
+    .dreamshare-step__title {
+        @include position (240px, 0, 0, 20px);
+        width: 196px;
+        height: 58px;
+        @include styleText(Montserrat f, 24px, 14px);
+    }
+    .dreamshare-step__text {
+        @include position (308px, 0, 0, 20px);
+        width: 196px;
+        height: 76px;
+    }
+    .dreamshere-step2_step {
+        @include position (255px, 0, 0, 20px);
+    }
+    .dreamshare-step2__title {
+        @include position (289px, 0, 0, 20px);
+        width: 196px;
+        height: 29px;
+    }
+    .dreamshare-step2__text {
+        @include position (327px, 0, 0, 20px);
+        height: 57px;
+    }
+    .partner-wrap {
+        width: 492px;
+        height: 606px;
+        margin: 0 auto;
+        margin-bottom: 95px;
+    }
+    .partner__title {
+        width: 416px;
+        text-align: center;
+    }
+    .partner {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap row;
+    }
+    .partner__box-1-2 {
+        width: 236px;
+        height: 205px;
+        @include flex(center, 0);
+    }
+    .partner__box-3-24 {
+        width: 236px;
+        height: 205px;
+        @include flex(center, 0);
+    }
+    .diana {
+        height: 224px;
+    }
+    .partner__name {
+        width: 236px;
+        height: 18px;
+        position: absolute;
+        margin: 137px 0 50px 0;
+    }
+    .diana-name {
+        width: 236px;
+        height: 18px;
+        margin: 137px 0 69px 0;
+    }
+    .partner__info-1-2 {
+        width: 236px;
+        height: 38px;
+    }
+    .diana-info {
+        height: 57px;
+    }
+    .partner__btn {
+        margin-top: 40px;
+    }
+    .ord-brad {
+        order: 0;
+        margin: 0px 20px 54px 0;
+    }
+    .ord-mari {
+        order: 2;
+    }
+    .ord-diana {
+        order: 1;
+    }
+    .ord-chris {
+        order: 3;
+    }
+    .ideas-wrap {
+        width: 748px;
+        height: 1032px;
+    }
+    .ideas__boxTitle {
+        @include flex(center, 0);
+    }
+    .ideas__title {
+        width: 350px;
+    }
+    .ideas__box {
+        width: 748px;
+        height: 310px;
+    }
+    .first-ideas__img {
+        width: 236px;
+        height: 310px;
+    }
+    .first-box_img {
+        width: 236px;
+        height: 310px;
+    }
+    .first-box_shadow {
+        width: 236px;
+        height: 310px;
+    }
+    .second-ideas__img {
+        width: 492px;
+        height: 310px;
+    }
+    .second-box_img {
+        width: 492px;
+        height: 310px;
+    }
+    .second-box_shadow {
+        width: 492px;
+        height: 310px;
+    }
+    .sport::after {
+        @include position (128px, 0, 0, 15px);
+        width: 200px;
+        height: 46px;
+        @include flex(center, 0);
+    }
+    .health::after {
+        @include position (128px, 0, 0, 15px);
+        width: 206px;
+        height: 54px;
+        @include flex(center, 0);
+    }
+    .extreme::after {
+        @include position (128px, 0, 0, 15px);
+        width: 206px;
+        height: 54px;
+        @include flex(center, 0);
+    }
+    .games::after {
+        @include position (142px, 0, 0, 15px);
+        width: 206px;
+        height: 27px;
+        @include flex(center, 0);
+    }
+    .culture::after {
+        @include position (142px, 0, 0, 116px);
+        width: 261px;
+        height: 27px;
+        @include flex(center, 0);
+    }
+    .relax::after {
+        @include position (142px, 0, 0, 108px);
+        width: 277px;
+        height: 27px;
+        @include flex(center, 0);
+    }
+    .trevel::after {
+        @include position (142px, 0, 0, 15px);
+        width: 206px;
+        height: 27px;
+        @include flex(center, 0);
+    }
+    .create-wrap {
+        height: 158px;
+    }
+    .create__title {
+        width: 307px;
+        height: 27px;
+        @include styleText(Montserrat f, 22px, 27px);
+    }
+    .footer {
+        margin-bottom: 20px;
+    }
+    .container-footer {
+        width: 748px;
+    }
+    .footer__logo-text {
+        margin: 38px 108px 166px 0;
+    }
+    .comp-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    .company {
+        margin: 40px 100px 11px 0px;
+        width: 70px;
+        height: 17px;
+        font-family: Montserrat f;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        color: #444444;
+    }
+    .all_info {
+        width: 114px;
+        height: 156px;
+        display: flex;
+        flex-direction: column;
+    }
+    .all_info a {
+        text-decoration: none;
+        font-family: Roboto n;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 26px;
+        color: #999999;
+    }
+    .prt {
+        margin: 40px 148px 167px 0;
+    }
+    .by {
+        width: 83px;
+    }
+}

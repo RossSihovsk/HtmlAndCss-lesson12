@@ -1,0 +1,629 @@
+     @import url(reset.css);
+     @import url(fonts/montserrat/montserrat.css);
+     @import url(fonts/roboto/roboto.css);
+     @import'variables';
+     @import'mixin';
+    
+     @mixin position($t, $r, $b, $l) {
+        position: absolute;
+        top: $t;
+        right: $r;
+        bottom: $b;
+        left: $l;
+    }
+    
+    @mixin flex ($jc, $align) {
+        display: flex;
+        justify-content: $jc;
+        align-items: $align;
+    }
+    
+    @mixin styleText($ff, $fz, $lh) {
+        font-family: $ff;
+        font-size: $fz;
+        line-height: $lh;
+    }
+
+    $bd-rad:40px;
+$head-mainColor: #FFFFFF;
+$btn-color:#FF4E50;
+     
+     .header {
+         background-image: url(img/Background.png);
+         background-size: cover;
+         width: 100%;
+         height: 700px;
+     }
+     
+     .item {
+         position: relative;
+         float: left;
+         left: calc(50% - 1440px/2);
+     }
+     
+     .header-logoName {
+         @include position (46px, 0, 0, 248px);
+         width: 152px;
+         height: 24px;
+         @include styleText(Montserrat f, 20px, 24px);
+         color: $head-mainColor
+     }
+     
+     .header-logIn {
+         @include position (50px, 0, 0, 996px);
+         width: 44px;
+         height: 17px;
+         @include styleText(Montserrat o, 14px, 17px);
+         color: $head-mainColor
+     }
+     
+     .header-SignUp {
+         @include position (40px, 0, 0, 1059px);
+         @include flex(center, center);
+         width: 90px;
+         height: 36px;
+         border: 2px solid $head-mainColor;
+         border-radius: $bd-rad;
+         p {
+             @include styleText(Montserrat o, 14px, 17px);
+             color: $head-mainColor
+         }
+     }
+     
+     .header-maintext {
+         @include position (223.5px, 0, 0, 485px);
+         width: 470px;
+         height: 126px;
+         @include styleText(Montserrat f, 52px, 63px);
+         text-align: center;
+         color: $head-mainColor
+     }
+     
+     .header-text {
+         @include position (378px, 0, 0, 522px);
+         width: 396px;
+         height: 25px;
+         @include styleText(Roboto n, 24px, 24px);
+         color: #F7F3F2;
+     }
+     
+     .header-btn {
+         @include position (436px, 0, 0, 608px);
+         width: 225px;
+         height: 40px;
+         background: $btn-color;
+         border-radius: $bd-rad;
+         @include styleText(Montserrat f, 14px, 17px);
+         @include flex(center, center);
+         color: $head-mainColor
+     }
+     
+     .container {
+         width: 940px;
+         min-height: 500px;
+         margin: 0 auto;
+     }
+     
+     .dreamshare-wrap {
+         width: 940px;
+         height: 467px;
+         margin: 95px 0;
+     }
+     
+     .dreamshare__boxTitle {
+         @include flex(center, 0);
+     }
+     
+     .dreamshare__title {
+         margin-bottom: 35px;
+         width: 342px;
+         height: 32px;
+         @include styleText(Montserrat f, 26px, 32px);
+         color: #444444;
+     }
+     
+     .dreamshare-step {
+         @include flex(space-between, 0);
+     }
+     
+     .dreamshare-step__box {
+         width: 300px;
+     }
+     
+     .dreamshare-step__img {
+         width: inherit;
+         height: 400px;
+         position: relative;
+     }
+     
+     .dreamshere-step_step {
+         @include position (219px, 0, 0, 25px);
+         width: 70px;
+         height: 20px;
+         background: $btn-color;
+         border-radius: $bd-rad;
+         @include styleText(Montserrat o, 10px, 12px);
+         @include flex(center, center);
+         letter-spacing: 2px;
+         color: #FFFFFF;
+     }
+     
+     .dreamshare-step__title {
+         @include position (254px, 0, 0, 25px);
+         width: 250px;
+         height: 58px;
+         @include styleText(Montserrat f, 24px, 26px);
+         color: $head-mainColor;
+         @include flex(0, flex-end);
+     }
+     
+     .dreamshare-step__text {
+         @include position (322px, 0, 0, 25px);
+         width: 250px;
+         height: 57px;
+         @include styleText(Roboto n, 14px, 14px);
+         @include flex(0, flex-end);
+         color: #E3E3E3;
+     }
+     
+     .dreamshere-step2_step {
+         @extend .dreamshere-step_step;
+         @include position (250px, 0, 0, 25px);
+     }
+     
+     .dreamshare-step2__title {
+         @extend .dreamshare-step__title;
+         @include position (284px, 0, 0, 25px);
+         height: 29px;
+         @include styleText(Montserrat f, 24px, 14px);
+     }
+     
+     .dreamshare-step2__text {
+         @extend .dreamshare-step__text;
+     }
+     
+     .dreamshere-step3_step {
+         @extend .dreamshere-step_step;
+     }
+     
+     .dreamshare-step3__title {
+         @extend .dreamshare-step__title;
+     }
+     
+     .dreamshare-step3__text {
+         @extend .dreamshare-step__text;
+     }
+     
+     .partner-wrap {
+         width: 940px;
+         height: 367px;
+         margin-bottom: 95px;
+     }
+     
+     .partner__boxTitle {
+         @extend .dreamshare__boxTitle;
+     }
+     
+     .partner__title {
+         @extend .dreamshare__title;
+         width: 491px;
+     }
+     
+     .partner {
+         @include flex(space-between, 0);
+     }
+     
+     .partner__box-1-2 {
+         width: 221px;
+         height: 205px;
+         @include flex(center, 0);
+     }
+     
+     .partner__box-3-4 {
+         @extend .partner__box-1-2;
+         height: 224px;
+     }
+     
+     .partner__img {
+         width: 120px;
+         height: 120px;
+         position: relative;
+     }
+     
+     .partner__icon {
+         width: 32px;
+         height: 32px;
+         border-radius: $bd-rad;
+         @include position (88px, 0, 0, 88px);
+         @include flex(center, center);
+     }
+     
+     .partner__infoBox {
+         @include flex(center, 0);
+     }
+     
+     .partner__name {
+         width: 221px;
+         height: 18px;
+         position: absolute;
+         margin: 137px 0 50px 0;
+         @include flex(center, flex-end);
+         @include styleText(Montserrat f, 14px, 17px);
+         color: #444444;
+     }
+     
+     .partner__info-1-2 {
+         @include flex(center, flex-end);
+         position: absolute;
+         margin-top: 167px;
+         width: 221px;
+         height: 38px;
+         color: #666666;
+         @include styleText(Roboto n, 14px, 14px);
+         text-align: center;
+     }
+     
+     .partner__info-3-4 {
+         @extend .partner__info-1-2;
+         height: 57px;
+     }
+     
+     .partner-button {
+         @include flex(center, 0);
+     }
+     
+     .partner__btn {
+         border: 2px solid #FF4E50;
+         border-radius: $bd-rad;
+         width: 180px;
+         height: 40px;
+         background-color: white;
+         color: $btn-color;
+         cursor: pointer;
+         margin-top: 36px;
+         @include styleText(Montserrat f, 14px, 17px);
+     }
+     
+     .ideas-wrap {
+         width: 940px;
+         height: 1037px;
+         margin-bottom: 95px;
+     }
+     
+     .ideas__boxTitle {
+         @include flex(center, 0);
+     }
+     
+     .ideas__title {
+         @extend .dreamshare__title;
+         width: 413px;
+     }
+     
+     .ideas__box {
+         width: 940px;
+         height: 310px;
+         @include flex(space-between, 0);
+         margin-bottom: 20px;
+     }
+     
+     .first-ideas__img {
+         position: relative;
+         width: 300px;
+         height: 310px;
+     }
+     
+     .first-box_img {
+         position: absolute;
+         width: 300px;
+         height: 310px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+         border-radius: 4px;
+     }
+     
+     .first-box_shadow {
+         position: absolute;
+         width: 300px;
+         height: 310px;
+         background: #000000;
+         mix-blend-mode: normal;
+         opacity: 0.2;
+         border-radius: 4px;
+     }
+     
+     .second-ideas__img {
+         position: relative;
+         width: 620px;
+         height: 310px;
+     }
+     
+     .second-box_img {
+         position: absolute;
+         width: 620px;
+         height: 310px;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+         border-radius: 4px;
+     }
+     
+     .second-box_shadow {
+         position: absolute;
+         width: 620px;
+         height: 310px;
+         background: #000000;
+         mix-blend-mode: normal;
+         opacity: 0.2;
+         border-radius: 4px;
+     }
+     
+     .sport {
+         background: url(img/on1.png);
+         background-size: cover;
+         background-position: center center;
+     }
+     
+     .health {
+         background: url(img/Object2.png);
+         background-size: cover;
+         background-position: center center;
+     }
+     
+     .extreme {
+         background: url(img/Object3.png);
+         background-size: cover;
+         background-position: center center;
+     }
+     
+     .games {
+         background: url(img/Object4.png);
+         background-size: cover;
+         background-position: center center;
+     }
+     
+     .culture {
+         background: url(img/Object5.png);
+         background-size: cover;
+         background-position: center center;
+     }
+     
+     .relax {
+         background: url(img/Object7.png);
+         background-size: cover;
+         background-position: center center;
+     }
+     
+     .trevel {
+         background: url(img/Object222.png);
+         background-size: cover;
+         background-position: center center;
+     }
+     
+     .sport::after {
+         content: 'Sports and Activis';
+         @include styleText(Montserrat f, 22px, 27px);
+         @include position (142px, 0, 0, 46px);
+         @include flex(0, flex-end);
+         color: #FFFFFF;
+         position: absolute;
+         width: 209px;
+         height: 27px;
+         text-align: center;
+     }
+     
+     .health::after {
+         content: 'Wellness and Health';
+         @include styleText(Montserrat f, 22px, 27px);
+         @include position (141px, 0, 0, 31px);
+         color: #FFFFFF;
+         position: absolute;
+         width: 238px;
+         height: 27px;
+         @include flex(0, flex-end);
+         text-align: center;
+     }
+     
+     .extreme::after {
+         content: 'Extreme Sports and Expeditions';
+         color: #FFFFFF;
+         @include position (128px, 0, 0, 57px);
+         width: 187px;
+         height: 54px;
+         @include styleText(Montserrat f, 22px, 27px);
+         @include flex(0, flex-end);
+         text-align: center;
+     }
+     
+     .games::after {
+         content: 'Games';
+         color: #FFFFFF;
+         @include position (142px, 0, 0, 110px);
+         width: 80px;
+         height: 27px;
+         @include styleText(Montserrat f, 22px, 27px);
+         @include flex(0, flex-end);
+         text-align: center;
+     }
+     
+     .culture::after {
+         content: 'Culture and Education';
+         @include styleText(Montserrat f, 22px, 27px);
+         @include position (142px, 0, 0, 180px);
+         @include flex(0, flex-end);
+         color: #FFFFFF;
+         position: absolute;
+         width: 261px;
+         height: 27px;
+         text-align: center;
+     }
+     
+     .relax::after {
+         content: 'Enjomet and Relaxation';
+         color: #FFFFFF;
+         @include position (142px, 0, 0, 172px);
+         width: 277px;
+         height: 27px;
+         @include styleText(Montserrat f, 22px, 27px);
+         @include flex(0, flex-end);
+         text-align: center;
+     }
+     
+     .trevel::after {
+         content: 'Trevelling';
+         @include styleText(Montserrat f, 22px, 27px);
+         @include position (142px, 0, 0, 92.5px);
+         @include flex(0, flex-end);
+         color: #FFFFFF;
+         position: absolute;
+         width: 114px;
+         height: 27px;
+         text-align: center;
+     }
+     
+     .create-wrap {
+         margin: 0 auto;
+         width: 482px;
+         height: 164px;
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         margin-bottom: 100px;
+     }
+     
+     .create__boxTitle {
+         @include flex(center, 0);
+     }
+     
+     .create__title {
+         @extend .dreamshare__title;
+         width: 363px;
+         margin-bottom: 43px;
+     }
+     
+     .create__text {
+         @include styleText(Roboto n, 18px, 14px);
+         @include flex(center, center);
+         width: 415px;
+         height: 24px;
+         color: #666666;
+     }
+     
+     .create-input-button {
+         width: 482px;
+         height: 40px;
+         @include flex(space-between, 0);
+         margin-top: 25px;
+     }
+     
+     input {
+         width: 299px;
+         height: 40px;
+         border: 1px solid #D4D4D4;
+         border-radius: 3px;
+     }
+     
+     input::placeholder {
+         width: 126px;
+         height: 16px;
+         @include styleText(Roboto n, 14px, 16px);
+         color: #999999;
+         padding: 0 15px;
+     }
+     
+     .creat__btn {
+         width: 172.13px;
+         height: 40px;
+         background-color: $btn-color;
+         border-radius: $bd-rad;
+         border: 0;
+         @include flex(center, 0);
+     }
+     
+     .creat__btn p {
+         width: 117px;
+         height: 17px;
+         @include styleText(Montserrat f, 14px, 17px);
+         color: $head-mainColor;
+     }
+     
+     hr {
+         border: 2px solid #FF4E50;
+     }
+     
+     .footer {
+         width: 100%;
+         height: 224px;
+         margin-bottom: 36px;
+         margin-top: -8px;
+         @include flex(center, 0);
+     }
+     
+     .container-footer {
+         width: 940px;
+         display: flex;
+         height: inherit;
+     }
+     
+     .footer__logo-text {
+         width: 119px;
+         height: 20px;
+         @include styleText(Montserrat t, 16px, 20px);
+         color: $btn-color;
+         margin: 38px 122px 166px 0;
+     }
+     
+     .company {
+         margin: 40px 169px 11px 0px;
+         width: 70px;
+         height: 17px;
+         font-family: Montserrat f;
+         font-size: 14px;
+         line-height: 17px;
+         display: flex;
+         align-items: flex-end;
+         text-align: center;
+         color: #444444;
+     }
+     
+     .all_info {
+         width: 114px;
+         height: 156px;
+         display: flex;
+         flex-direction: column;
+     }
+     
+     .all_info a {
+         text-decoration: none;
+         font-family: Roboto n;
+         font-style: normal;
+         font-weight: 300;
+         font-size: 14px;
+         line-height: 26px;
+         color: #999999;
+     }
+     
+     .prt {
+         width: 64px;
+         height: 17px;
+         @include styleText(Montserrat f, 14px, 17px);
+         color: #444444;
+         margin: 40px 317px 167px 0;
+     }
+     
+     .by {
+         width: 90px;
+         height: 12px;
+         @include styleText(Montserrat f, 10px, 12px);
+         color: #CCCCCC;
+         margin: 40px 0px 7px 0;
+     }
+     
+     .bitmap {
+         width: 110px;
+         height: 24px;
+         margin: 0 0 141px -30px;
+     }
+
+     @import 'bground_styles';
+    @import 'medium';
+    @import 'small';
+     
+     
+     

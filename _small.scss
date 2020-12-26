@@ -1,0 +1,365 @@
+@media screen and (max-width: 768px) {
+    .item {
+        position: relative;
+        float: left;
+        left: calc(50% - 660px/2);
+    }
+    .header {
+        background-image: url(img/Background.png);
+        background-position: 50%;
+        height: 540px;
+    }
+    .header-logoName {
+        @include position (153px, 0, 0, 262px);
+        width: 152px;
+        height: 24px;
+    }
+    .header-logIn {
+        @include position (40px, 0, 0, 250px);
+    }
+    .header-SignUp {
+        @include position (30px, 0, 0, 313px);
+    }
+    .header-maintext {
+        @include position (203.5px, 0, 0, 200px);
+        width: 272px;
+        height: 74px;
+        @include styleText(Montserrat f, 30px, 37px);
+    }
+    .header-text {
+        @include position (283px, 0, 0, 196px);
+        width: 280px;
+        height: 49px;
+        @include styleText(Roboto n, 18px, 24px);
+        text-align: center;
+    }
+    .header-btn {
+        @include position (347px, 0, 0, 197px);
+        width: 280px;
+        height: 40px;
+    }
+    .container {
+        width: 300px;
+        min-height: 500px;
+        margin: 0 auto;
+    }
+    .dreamshare-wrap {
+        width: 300px;
+        height: 782px;
+        margin: 35px 0;
+    }
+    .dreamshare__title {
+        margin-bottom: 15px;
+        width: 300px;
+        height: 27px;
+        @include flex(center, 0);
+        @include styleText(Montserrat f, 22px, 27px);
+    }
+    .dreamshare-step {
+        @include flex(0, 0);
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: space-between;
+    }
+    .dreamshare-step__box {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .dreamshare-step__img {
+        width: 300px;
+        height: 240px;
+        position: relative;
+    }
+    .dreamshere-step_step {
+        @include position (64px, 0, 0, 20px);
+    }
+    .dreamshare-step__title {
+        @include position (99px, 0, 0, 20px);
+        width: 250px;
+        height: 58px;
+        @include styleText(Montserrat f, 24px, 14px);
+    }
+    .dreamshare-step__text {
+        @include position (167px, 0, 0, 20px);
+        width: 250px;
+        height: 57px;
+        @include styleText(Roboto n, 14px, 14px);
+        @include flex(0, flex-end);
+        color: #E3E3E3;
+    }
+    .dreamshere-step2_step {
+        @include position (95px, 0, 0, 20px);
+    }
+    .dreamshare-step2__title {
+        @include position (129px, 0, 0, 20px);
+        width: 250px;
+        height: 29px;
+        @include styleText(Montserrat f, 24px, 14px);
+    }
+    .partner-wrap {
+        width: 300px;
+        height: 1035px;
+        margin-bottom: 35px;
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+    }
+    .partner__title {
+        width: 280px;
+        height: 54px;
+        margin-bottom: 14px;
+    }
+    .partner {
+        @include flex(0, 0);
+        display: flex;
+        flex-flow: wrap column;
+    }
+    .ord-brad {
+        order: 0;
+        margin: 0px 0px 16px 0;
+    }
+    .ord-mari {
+        order: 2;
+        margin: 0px 0px 16px 0;
+    }
+    .ord-diana {
+        order: 1;
+        margin: 0px 0px 16px 0;
+    }
+    .ord-chris {
+        order: 3;
+    }
+    .partner__box-1-2 {
+        width: 236px;
+        height: 205px;
+        @include flex(center, 0);
+    }
+    .partner__box-3-4 {
+        height: 205px;
+    }
+    .diana {
+        height: 224px;
+    }
+    .partner__img {
+        width: 120px;
+        height: 120px;
+        position: relative;
+    }
+    .ideas-wrap {
+        width: 300px;
+        height: 990px;
+        margin-bottom: 35px;
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .ideas__boxTitle {
+        @include flex(center, 0);
+    }
+    .ideas__title {
+        margin-bottom: 36px;
+        text-align: center;
+        width: 280px;
+        height: 54px;
+    }
+    .ideas__box {
+        margin-top: -20px;
+        width: 300px;
+        height: 120px;
+        @include flex(0, 0);
+        display: flex;
+        flex-flow: wrap column;
+    }
+    .b1 {
+        height: 380px;
+        margin-top: -20px;
+    }
+    .b2 {
+        height: 260px;
+        margin-top: -10px;
+    }
+    .b3 {
+        height: 240px;
+        margin-top: -10px;
+    }
+    .first-ideas__img {
+        position: relative;
+        width: 300px;
+        height: 120px;
+    }
+    .first-box_img {
+        position: absolute;
+        width: 300px;
+        height: 120px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+    .first-box_shadow {
+        position: absolute;
+        width: 300px;
+        height: 120px;
+        background: #000000;
+        mix-blend-mode: normal;
+        opacity: 0.2;
+        border-radius: 4px;
+    }
+    .second-ideas__img {
+        position: relative;
+        width: 300px;
+        height: 120px;
+    }
+    .second-box_img {
+        position: absolute;
+        width: 300px;
+        height: 120px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+    }
+    .second-box_shadow {
+        position: absolute;
+        width: 300px;
+        height: 120px;
+        background: #000000;
+        mix-blend-mode: normal;
+        opacity: 0.2;
+        border-radius: 4px;
+    }
+    .sport::after {
+        @include position (33px, 0, 0, 47px);
+        width: 200px;
+        height: 54px;
+    }
+    .health::after {
+        @include position (33px, 0, 0, 47px);
+        width: 206px;
+        height: 54px;
+    }
+    .extreme::after {
+        @include position (33px, 0, 0, 47px);
+        width: 206px;
+        height: 54px;
+    }
+    .games::after {
+        @include position (47px, 0, 0, 47px);
+        width: 206px;
+        height: 27px;
+    }
+    .culture::after {
+        @include position (47px, 0, 0, 20px);
+        width: 261px;
+        height: 27px;
+    }
+    .relax::after {
+        @include position (47px, 0, 0, 12px);
+        width: 277px;
+        height: 27px;
+    }
+    .trevel::after {
+        @include position (47px, 0, 0, 47px);
+        width: 206px;
+        height: 27px;
+    }
+    .create-wrap {
+        margin: 0 auto;
+        width: 300px;
+        height: 192px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .create__boxTitle {
+        @include flex(center, 0);
+    }
+    .create__title {
+        width: 280px;
+        height: 54px;
+        margin-bottom: 9px;
+        text-align: center;
+    }
+    .create__text {
+        width: 300px;
+        height: 24px;
+    }
+    .create-input-button {
+        width: 280px;
+        height: 90px;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    input {
+        width: 280px;
+        height: 40px;
+    }
+    .creat__btn {
+        width: 280px;
+        height: 40px;
+    }
+    .footer {
+        width: 100%;
+        height: 204px;
+        margin-bottom: 22px;
+        margin-top: -8px;
+        display: flex;
+    }
+    .container-footer {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+    }
+    .footer__logo-text {
+        margin: 21px 100px 13px 101px;
+    }
+    .company {
+        margin: 0px 125px 1px 125px;
+        width: 70px;
+        height: 17px;
+        font-family: Montserrat f;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        color: #444444;
+    }
+    .all_info {
+        width: 280px;
+        height: 52px;
+        text-align: center;
+        margin: 0px 20px 6px 20px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .all_info a {
+        text-decoration: none;
+        margin-left: 25px;
+        font-family: Roboto n;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 26px;
+        text-align: center;
+        color: #999999;
+    }
+    .prt {
+        margin: 0px 128.5px 14px 127.5px;
+    }
+    .by {
+        width: 83px;
+        height: 12px;
+        @include styleText(Montserrat f, 10px, 12px);
+        color: #CCCCCC;
+        margin: 0px 117px 7px 120px;
+        text-align: center;
+    }
+    .bitmap {
+        width: 110px;
+        height: 24px;
+        margin: 0 105px 0px 105px;
+    }
+}
